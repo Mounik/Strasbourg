@@ -1,2 +1,2 @@
 # Strasbourg
-Child Theme WordPress Starsbourg
+Child Theme WordPress Strasbourg
