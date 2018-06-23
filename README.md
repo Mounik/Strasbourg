@@ -1,5 +1,4 @@
 # Strasbourg
 Child Theme WordPress Strasbourg
 
-Réussite de connection avec Brackets ^^
-Rajout d'une ligne à l'aide de Vim
+Virer les box-shadow pour éviter les traits sous les liens des button
