@@ -1,8 +1,6 @@
 # Strasbourg
 Child Theme WordPress Strasbourg
 
-Virer les box-shadow pour éviter les traits sous les liens des button
-
     Rajouter le champ de recherche dans la barre de navigation
     Rajouter un texte de bienvenue sur la page principale
     Finir de mettre en forme le tableau d'évènements. Pense au survol de la souris!

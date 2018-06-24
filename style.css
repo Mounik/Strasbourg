@@ -120,5 +120,7 @@ nav {
 }
 .item button a {
     color: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 /* On vire les box-shadows pour avoir des liens propres dans les boutons */
