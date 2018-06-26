@@ -84,18 +84,12 @@ nav {
 }
 .navigation-top nav {
     display: flex;
+    height: 80px;
 }
-/* Barre de recherche dans le menu (ne fontionne pas ) */
-#searchbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* Search-form */
+.search-form {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-line-pack: end;
-    align-content: flex-end;
+    height: 50px;
 }
 /* 3 colojnness page d'accueil avec lien*/
 .box {
