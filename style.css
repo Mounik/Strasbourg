@@ -82,6 +82,9 @@ nav {
     -ms-flex-pack: center;
     justify-content: center;
 }
+.navigation-top nav {
+    display: flex;
+}
 /* Barre de recherche dans le menu (ne fontionne pas ) */
 #searchbar {
     display: -webkit-box;
@@ -154,4 +157,16 @@ nav {
     color: white;
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+/* Elargir le formulaire de réservation d'event manager sur l'article */
+.em-booking-form-details {
+    width: 1280px;
+}
+/* On écarte le texte de l'area */
+.em-booking-form label {
+    width: 25%;
+}
+/* Plus de place pour le text-area */
+.em-booking-form-details input.input, .em-booking-form-details textarea {
+    width: 100%;
 }
