@@ -194,3 +194,11 @@ nav {
 .em-booking-form-details textarea {
     width: 100%;
 }
+/* on vire le page-header */
+.page-header {
+    display: none;
+}
+/* On déplie les articles pour qu'il prennent 90% de la place */
+.post .type-post .status-publish .format-standard .hentry {
+    width: 90%;
+}
