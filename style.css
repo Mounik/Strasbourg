@@ -20,10 +20,15 @@ Version:        1.0
         z-index: 99999;
     }
 }
+
 /* on centre le menu */
-.main-navigation ul, .js .main-navigation ul ul, .js .main-navigation > div > ul {
+
+.main-navigation ul,
+.js .main-navigation ul ul,
+.js .main-navigation > div > ul {
     text-align: center;
 }
+
 /* centrer le logo, le titre et l’accroche du site */
 
 #masthead .wrap {
@@ -79,6 +84,16 @@ Version:        1.0
     justify-content: space-around;
 }
 
+/* On centre pour les mobiles */
+
+@media screen and (max-width: 360px) {
+    .box {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+
 .item {
     width: calc(33% - 2rem);
     min-width: 200px;
@@ -96,6 +111,7 @@ Version:        1.0
     align-items: center;
     margin-top: 25px;
     text-decoration: none !important;
+    margin: auto;
 }
 
 /* Définition de la taille des i dans la page d'accueil */
