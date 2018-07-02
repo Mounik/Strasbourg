@@ -212,7 +212,7 @@ tr:hover {
 /* On règle les problemes de map sur smartphone */
 @media screen and (max-width: 360px) {
     .em-location-map-container {
-        width: 350px !important;
+        width: 300px !important;
         height: 300px !important;
     }
 }
