@@ -20,7 +20,10 @@ Version:        1.0
         z-index: 99999;
     }
 }
-
+/* on centre le menu */
+.main-navigation ul, .js .main-navigation ul ul, .js .main-navigation > div > ul {
+    text-align: center;
+}
 /* centrer le logo, le titre et l’accroche du site */
 
 #masthead .wrap {
