@@ -29,27 +29,29 @@ Version:        1.0
 
 
 
-    /* Redimensionner le logo */
-    .custom-logo-link img {
-        max-width: 700px;
-        max-height: 160px;
-    }
+/* Redimensionner le logo */
 
-    /* Modifier la largeur des pages et des articles (sans barre latérale)*/
-    @media screen and (min-width: 48em) {
-        .wrap {
-            max-width: 1280px !important;
-            padding-left: 2em;
-            padding-right: 2em;
-            margin: auto;
-        }
-        .single-post:not(.has-sidebar) #primary,
-        .page.page-one-column:not(.twentyseventeen-front-page) #primary,
-        .archive.page-one-column:not(.has-sidebar) .page-header,
-        .archive.page-one-column:not(.has-sidebar) #primary {
-            max-width: 1280px;
-        }
+.custom-logo-link img {
+    max-width: 700px;
+    max-height: 160px;
+}
+
+/* Modifier la largeur des pages et des articles (sans barre latérale)*/
+
+@media screen and (min-width: 48em) {
+    .wrap {
+        max-width: 1280px !important;
+        padding-left: 2em;
+        padding-right: 2em;
+        margin: auto;
     }
+    .single-post:not(.has-sidebar) #primary,
+    .page.page-one-column:not(.twentyseventeen-front-page) #primary,
+    .archive.page-one-column:not(.has-sidebar) .page-header,
+    .archive.page-one-column:not(.has-sidebar) #primary {
+        max-width: 1280px;
+    }
+}
 
 }
 
@@ -132,7 +134,9 @@ button a {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-/* on inisite pour virer les box-shadows des liens */
+
+/* on insiste pour virer les box-shadows des liens */
+
 .entry-content a {
     -webkit-box-shadow: none;
     box-shadow: none;
