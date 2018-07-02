@@ -10,83 +10,110 @@ Version:        1.0
 */
 
 /* menu toujours fixe*/
+
 @media screen and (max-width: 767px) {
-  .navigation-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
-  }
+    .navigation-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+    }
 }
 
 /* centrer le logo, le titre et l’accroche du site */
+
 #masthead .wrap {
-  text-align: center;
+    text-align: center;
 }
 
 /* -- pour écran > 767px -- */
+
 @media screen and (min-width: 48em) {
 
-  /* barre latérale à gauche */
-  .has-sidebar #secondary {
-    float: left;
-  }
-  .has-sidebar #primary {
-    float: right;
-  }
-  .has-sidebar:not(.error404) #primary {
-    float: right;
-  }
+    /* barre latérale à gauche */
+    .has-sidebar #secondary {
+        float: left;
+    }
+    .has-sidebar #primary {
+        float: right;
+    }
+    .has-sidebar:not(.error404) #primary {
+        float: right;
+    }
 
-  /* modifier la largeur de la barre latérale */
-  .has-sidebar:not(.error404) #primary {
-    width: 65%;
-  }
-  .has-sidebar #secondary {
-    width: 31%;
-  }
+    /* modifier la largeur de la barre latérale */
+    .has-sidebar:not(.error404) #primary {
+        width: 65%;
+    }
+    .has-sidebar #secondary {
+        width: 31%;
+    }
 
-  /* Redimensionner le logo */
-  .custom-logo-link img {
-  max-width: 700px;
-  max-height: 160px;
-  }
+    /* Redimensionner le logo */
+    .custom-logo-link img {
+        max-width: 700px;
+        max-height: 160px;
+    }
 
-  /* Modifier la largeur des pages et des articles (sans barre latérale)*/
-  @media screen and (min-width: 48em) {
-  .wrap {
-    max-width: 1280px !important;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin: auto;
-  }
-  .single-post:not(.has-sidebar) #primary,
-  .page.page-one-column:not(.twentyseventeen-front-page) #primary,
-  .archive.page-one-column:not(.has-sidebar) .page-header,
-  .archive.page-one-column:not(.has-sidebar) #primary {
-    max-width: 1280px;
-  }
+    /* Modifier la largeur des pages et des articles (sans barre latérale)*/
+    @media screen and (min-width: 48em) {
+        .wrap {
+            max-width: 1280px !important;
+            padding-left: 2em;
+            padding-right: 2em;
+            margin: auto;
+        }
+        .single-post:not(.has-sidebar) #primary,
+        .page.page-one-column:not(.twentyseventeen-front-page) #primary,
+        .archive.page-one-column:not(.has-sidebar) .page-header,
+        .archive.page-one-column:not(.has-sidebar) #primary {
+            max-width: 1280px;
+        }
+    }
+
 }
 
-}
-/* Font Awesome Home */
+/* Font Awesome Home dans le menu */
+
 nav a {
     float: left;
 }
+
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
-#searchbar {
+
+.navigation-top nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-content: flex-end;
+    height: 80px;
 }
-/* 3cols page d'accueil */
-.box {
+
+/* Search-form */
+
+.search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    height: 50px;
+}
+
+/* 3 colojnness page d'accueil avec lien*/
+
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -95,29 +122,87 @@ nav {
     min-width: 200px;
     margin-bottom: 3rem;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 25px;
     text-decoration: none !important;
 }
+
+/* Définition de la taille des i dans la page d'accueil */
+
 .item i {
     font-size: 50px;
     color: rgba(3, 3, 3, 0.5);
 }
+
+/* Rajout d'un cercle autour des images font awesome dans la page d'accueil */
+
 .cercle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: 5px solid rgba(3, 3, 3, 0.5);
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
+
+/* Bouton de la page d'accueil */
+
 .item button {
     text-align: center;
     font-size: 12px;
 }
+
+/* On vire les box-shadows pour avoir des liens propres dans les boutons */
+
 .item button a {
     color: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* Elargir le formulaire de réservation d'event manager sur l'article */
+
+.em-booking-form-details {
+    width: 1280px;
+}
+
+/* On écarte le texte de l'area */
+
+.em-booking-form label {
+    width: 25%;
+}
+
+/* Plus de place pour le text-area */
+
+.em-booking-form-details input.input,
+.em-booking-form-details textarea {
+    width: 100%;
+}
+/* on vire le page-header */
+.page-header {
+    display: none;
+}
+/* On déplie les articles pour qu'il prennent 90% de la place */
+.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+    width: 90%;
+}
+/* Hover sur les events */
+tr:hover {
+    background-color: aqua;
 }
