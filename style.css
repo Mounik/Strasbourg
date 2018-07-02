@@ -209,3 +209,10 @@ tr:hover {
 .css-events-list table.events-table td {
     padding: 10px;
 }
+/* On règle les problemes de map sur smartphone */
+@media screen and (max-width: 360px) {
+    .em-location-map-container {
+        width: 350px !important;
+        height: 300px !important;
+    }
+}
