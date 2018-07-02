@@ -148,7 +148,7 @@ Version:        1.0
 
 /* On vire les box-shadows pour avoir des liens propres dans les boutons */
 
-.item button a {
+button a {
     color: white;
     box-shadow: none;
     -webkit-box-shadow: none;
