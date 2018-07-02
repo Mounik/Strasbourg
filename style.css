@@ -210,9 +210,15 @@ tr:hover {
     padding: 10px;
 }
 /* On règle les problemes de map sur smartphone */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
     .em-location-map-container {
-        width: 300px !important;
+        width: 260px !important;
         height: 300px !important;
+        margin: auto;
+    }
+
+    div.entry-content > div:first-of-type {
+        float: none !important;
+        margin: auto !important;
     }
 }
