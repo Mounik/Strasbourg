@@ -113,6 +113,10 @@ Version:        1.0
     text-decoration: none !important;
     margin: auto;
 }
+/* on rajoute une marge en dessous du texte de présentation pour aérer la page */
+.accueil {
+    margin-bottom: 150px;
+}
 
 /* Définition de la taille des i dans la page d'accueil */
 
