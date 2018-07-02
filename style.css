@@ -139,9 +139,9 @@ Version:        1.0
     border-radius: 50%;
 }
 
-/* Bouton de la page d'accueil */
+/* Boutons du site */
 
-.item button {
+button {
     text-align: center;
     font-size: 12px;
 }
@@ -153,6 +153,7 @@ button a {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
+
 
 /* Elargir le formulaire de réservation d'event manager sur l'article */
 
@@ -172,15 +173,27 @@ button a {
 .em-booking-form-details textarea {
     width: 100%;
 }
+
 /* on vire le page-header */
+
 .page-header {
     display: none;
 }
+
 /* On déplie les articles pour qu'il prennent 90% de la place */
-.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+
+.blog:not(.has-sidebar) #primary article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+.search:not(.has-sidebar) #primary article,
+.error404:not(.has-sidebar) #primary .page-content,
+.error404.has-sidebar #primary .page-content,
+body.page-two-column:not(.archive) #primary .entry-content,
+body.page-two-column #comments {
     width: 90%;
 }
+
 /* Hover sur les events */
+
 tr:hover {
-    background-color: aqua;
+    background-color: rgba(191, 191, 191, 0.5);
 }
