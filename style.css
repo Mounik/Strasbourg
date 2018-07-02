@@ -74,28 +74,6 @@ Version:        1.0
 
 }
 
-/* Font Awesome Home dans le menu */
-
-nav a {
-    float: left;
-}
-
-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.navigation-top nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 80px;
-}
-
 /* Search-form */
 
 .search-form {
@@ -105,7 +83,7 @@ nav {
     height: 50px;
 }
 
-/* 3 colojnness page d'accueil avec lien*/
+/* 3 colonness page d'accueil avec lien*/
 
 .box {
     display: -webkit-box;
