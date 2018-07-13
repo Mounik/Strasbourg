@@ -88,8 +88,13 @@ Version:        1.0
 
 @media screen and (max-width: 360px) {
     .box {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-line-pack: center;
         align-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 }
